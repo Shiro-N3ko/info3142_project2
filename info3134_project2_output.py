@@ -16,7 +16,7 @@ for entry in output_data:
     # Extract amounts
     amounts = [int(amount.replace("$", "").replace(",", "")) for amount in lines[1].split() if amount[0] == "$"]
     total_amount += sum(amounts)
-
+    
     # Print the email content
     content = '\n'.join(lines[2:])
     print(content)
